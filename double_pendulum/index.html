@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Physics: Double Pendulum in JS</title>
+    <link rel="stylesheet" type="text/css" href="pendulum.css" />
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="sidebar">
+      <form id="set_variables_form">
+
+        <label for="mass1">Mass1:</label>
+        <input type="range" id="mass1" value="10" min="1" max="50">
+
+        <label for="mass2">Mass2:</label>
+        <input type="range" id="mass2" value="10" min="1" max="50">
+
+        <label for="Phi1">Phi1 (in deg):</label>
+        <input type="range" id="Phi1" value="10" min="0" max="90">
+
+        <label for="Phi2">Phi2 (in deg):</label>
+        <input type="range" id="Phi2" value="10" min="0" max="90">
+
+        <input type="submit" class="submit-btn" value="Start Simulation">
+      </form>
+    </div>
+
+    <canvas id="myCanvas" class="phys-canvas" width="700" height="600"></canvas>
+
+
+    <script type="text/javascript" src="pendulum.js"></script>
+    <script type="text/javascript" src="resize.js"></script>
+  </body>
+
+</html>
