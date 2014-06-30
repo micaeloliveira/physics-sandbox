@@ -1,14 +1,14 @@
 $('#set_variables_form').submit(function (e) {
   e.preventDefault();
   console.log($('#mass1').val());
-  m1   = $('#mass1').val();
-  m2   = $('#mass2').val();
-  Phi1 = $('#Phi1').val()/180*(Math.PI);
-  Phi2 = $('#Phi2').val()/180*(Math.PI);
+  m1     = $('#mass1').val();
+  m2     = $('#mass2').val();
+  Phi1   = $('#Phi1').val()/180*(Math.PI);
+  Phi2   = $('#Phi2').val()/180*(Math.PI);
   d2Phi1 = 0;
   d2Phi2 = 0;
-  dPhi1 = 0;
-  dPhi2 = 0;
+  dPhi1  = 0;
+  dPhi2  = 0;
   run();
 });
 
