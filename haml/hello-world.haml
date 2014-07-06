@@ -8,13 +8,16 @@
     %link{href: "https://fonts.googleapis.com/css?family=Droid+Serif:400italic,400,700italic,700|Arbutus+Slab:400", rel: "stylesheet", type: "text/css"}/
     %link{href: "../assets/stylesheets/fonts.css", rel: "stylesheet", type: "text/css"}/
     %link{href: "../assets/stylesheets/base.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    %link{href: "../assets/stylesheets/main.css", media: "screen", rel: "stylesheet", type: "text/css"}/
 
 
   %body
-    %header
-      %h1{style: "margin-bottom: 5px"} Hello World!
-      %h2{style: "margin-top: 5px;margin-bottom: 30px"} This repo contains simple physics simulations
-    #content-wrapper
+    %header.main-title
+      %h1 Hello World!
+      %h2 This repo contains simple physics simulations
+      %a.anchor-nav{href: "../index.html"} < Back to Projects
+
+    .content-wrapper
       .inner.clearfix
         %section
           %p

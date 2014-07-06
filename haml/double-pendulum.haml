@@ -7,6 +7,7 @@
     %link{href: "https://fonts.googleapis.com/css?family=Droid+Serif:400italic,400,700italic,700|Arbutus+Slab:400", rel: "stylesheet", type: "text/css"}/
     %link{href: "../assets/stylesheets/fonts.css", rel: "stylesheet", type: "text/css"}/
     %link{href: "../assets/stylesheets/base.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+    %link{href: "../assets/stylesheets/main.css", media: "screen", rel: "stylesheet", type: "text/css"}/
     %link{href: "../assets/stylesheets/snippets.css", media: "screen", rel: "stylesheet", type: "text/css"}/
     %script{ src: "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
     %script{src: "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML", type: "text/javascript"}
@@ -20,10 +21,14 @@
     %title Double Pendulum
 
   %body
-    %header
-      %h1{style: "margin-bottom: 5px"} Double Pendulum
-      %h2{style: "margin-top: 5px;margin-bottom: 30px"} Simulation of the Double Pendulum in 100 lines of JavaScript
-    #content-wrapper
+    %header.main-title
+      %h1 Double Pendulum
+      %h2 Simulation of the Double Pendulum in 100 lines of JavaScript
+      %a.anchor-nav{href: "../index.html"} < Back to Projects
+
+
+
+    .content-wrapper
       .inner.clearfix
         %section
           %a.anchor{href: "../projects/double-pendulum-sim.html"} Double Pendulum Demo!

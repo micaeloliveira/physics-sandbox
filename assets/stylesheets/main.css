@@ -1,10 +1,13 @@
-/* line 2, ../sass/main.sass */
+/* line 1, ../sass/main.sass */
+.main-title {
+  margin-bottom: 50px;
+}
+/* line 3, ../sass/main.sass */
 .main-title h1 {
   margin-bottom: 0;
 }
-/* line 4, ../sass/main.sass */
+/* line 5, ../sass/main.sass */
 .main-title h2 {
-  margin-bottom: 50px;
   margin-top: 0;
 }
 /* line 7, ../sass/main.sass */
@@ -31,4 +34,15 @@
 /* line 20, ../sass/main.sass */
 .project-card p {
   margin-top: 0;
+}
+
+/* line 23, ../sass/main.sass */
+.anchor-nav {
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 27, ../sass/main.sass */
+.content-wrapper {
+  margin-top: 40px;
 }
