@@ -1,5 +1,34 @@
 /* line 1, ../sass/base.sass */
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "CMS", "Droid Serif", Georgia, Times, serif;
+  font-size: 16px;
+  padding: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* line 8, ../sass/base.sass */
+h1, h2, h3, p {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 11, ../sass/base.sass */
+h1 {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 3em;
+  font-weight: 400;
+}
+
+/* line 16, ../sass/base.sass */
+h2 {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  font-size: 1.6em;
+}
+
+/* line 21, ../sass/base.sass */
+p {
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.5;
+  font-size: 1.2em;
 }
