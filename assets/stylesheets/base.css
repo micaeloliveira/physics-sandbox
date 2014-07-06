@@ -28,7 +28,7 @@ h2 {
 
 /* line 21, ../sass/base.sass */
 p {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.9);
   line-height: 1.5;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }

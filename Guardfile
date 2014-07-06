@@ -9,7 +9,7 @@
 # notifications: true                send notifictions to Growl/libnotify/Notifu
 # haml_options: { ugly: true }    pass options to the Haml engine
 
-guard :haml, input: 'haml', output: 'html', run_at_start: true do
+guard :haml, input: 'haml', output: 'projects', run_at_start: true do
   watch(/^.+(\.html\.haml)$/)
 end
 
