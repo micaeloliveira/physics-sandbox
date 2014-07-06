@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "CMS";
+  src: url("../fonts/computer_modern_serif/cmunrm.eot");
+  src: url("../fonts/computer_modern_serif/cmunrm.eot?#iefix") format("embedded-opentype"), url("../fonts/computer_modern_serif/cmunrm.woff") format("woff"), url("../fonts/computer_modern_serif/cmunrm.ttf") format("truetype"), url("../fonts/computer_modern_serif/cmunrm.svg#cmunrm") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CMS";
+  src: url("../fonts/computer_modern_serif/cmunbx.eot");
+  src: url("../fonts/computer_modern_serif/cmunbx.eot?#iefix") format("embedded-opentype"), url("../fonts/computer_modern_serif/cmunbx.woff") format("woff"), url("../fonts/computer_modern_serif/cmunbx.ttf") format("truetype"), url("../fonts/computer_modern_serif/cmunbx.svg#cmunbx") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CMS";
+  src: url("../fonts/computer_modern_serif/cmunti.eot");
+  src: url("../fonts/computer_modern_serif/cmunti.eot?#iefix") format("embedded-opentype"), url("../fonts/computer_modern_serif/cmunti.woff") format("woff"), url("../fonts/computer_modern_serif/cmunti.ttf") format("truetype"), url("../fonts/computer_modern_serif/cmunti.svg#cmunti") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CMS";
+  src: url("../fonts/computer_modern_serif/cmunbi.eot");
+  src: url("../fonts/computer_modern_serif/cmunbi.eot?#iefix") format("embedded-opentype"), url("../fonts/computer_modern_serif/cmunbi.woff") format("woff"), url("../fonts/computer_modern_serif/cmunbi.ttf") format("truetype"), url("../fonts/computer_modern_serif/cmunbi.svg#cmunbi") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}

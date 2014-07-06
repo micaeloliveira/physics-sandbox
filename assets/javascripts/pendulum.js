@@ -1,14 +1,14 @@
 $('#set_variables_form').submit(function (e) {
   e.preventDefault();
   console.log($('#mass1').val());
-  m1   = $('#mass1').val();
-  m2   = $('#mass2').val();
-  Phi1 = $('#Phi1').val()/180*(Math.PI);
-  Phi2 = $('#Phi2').val()/180*(Math.PI);
+  m1     = $('#mass1').val();
+  m2     = $('#mass2').val();
+  Phi1   = $('#Phi1').val()/180*(Math.PI);
+  Phi2   = $('#Phi2').val()/180*(Math.PI);
   d2Phi1 = 0;
   d2Phi2 = 0;
-  dPhi1 = 0;
-  dPhi2 = 0;
+  dPhi1  = 0;
+  dPhi2  = 0;
   run();
 });
 
@@ -71,8 +71,8 @@ var l1     = 150;
 var l2     = 150;
 var X0     = 350;
 var Y0     = 60;
-var g      = 0.02;
-var time   = 4;
+var g      = 9.8;
+var time   = 0.05;
 
 var canvas  = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
@@ -88,6 +88,6 @@ function run(){
   context.clearRect(0, 0, canvas.width, canvas.height);
   init = setInterval(function(){
     animate(myCircle1, myCircle2, myLine1, myLine2, canvas, context);
-  }, 20);
+  }, 10);
 
 }

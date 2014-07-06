@@ -1,0 +1,55 @@
+/* line 1, ../sass/main.sass */
+.main-title {
+  margin-bottom: 50px;
+}
+/* line 3, ../sass/main.sass */
+.main-title h1 {
+  margin-bottom: 0;
+}
+/* line 5, ../sass/main.sass */
+.main-title h2 {
+  margin-top: 0;
+}
+/* line 7, ../sass/main.sass */
+.main-title a {
+  text-decoration: none;
+}
+
+/* line 10, ../sass/main.sass */
+.project-card {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+/* line 13, ../sass/main.sass */
+.project-card .card-title {
+  text-decoration: none;
+  color: black;
+}
+/* line 16, ../sass/main.sass */
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+/* line 20, ../sass/main.sass */
+.project-card p {
+  margin-top: 0;
+}
+
+/* line 23, ../sass/main.sass */
+.anchor-card {
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 28, ../sass/main.sass */
+.anchor-nav {
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 32, ../sass/main.sass */
+.content-wrapper {
+  margin-top: 40px;
+}
