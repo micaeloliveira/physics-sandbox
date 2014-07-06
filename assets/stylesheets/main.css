@@ -18,7 +18,7 @@
 /* line 10, ../sass/main.sass */
 .project-card {
   padding: 10px 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 /* line 13, ../sass/main.sass */
 .project-card .card-title {
@@ -37,12 +37,19 @@
 }
 
 /* line 23, ../sass/main.sass */
+.anchor-card {
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* line 28, ../sass/main.sass */
 .anchor-nav {
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 27, ../sass/main.sass */
+/* line 32, ../sass/main.sass */
 .content-wrapper {
   margin-top: 40px;
 }

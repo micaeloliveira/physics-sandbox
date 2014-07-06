@@ -43,8 +43,9 @@ p {
 a {
   font-weight: 600;
   color: #55acee;
+  text-decoration: none;
 }
-/* line 33, ../sass/base.sass */
+/* line 34, ../sass/base.sass */
 a:hover, a:visited {
   color: #55acee;
 }
