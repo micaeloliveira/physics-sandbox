@@ -9,22 +9,12 @@
     %link{href: "../assets/stylesheets/base.css", media: "screen", rel: "stylesheet", type: "text/css"}/
     %script{src: "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML", type: "text/javascript"}
     %script{type: "text/x-mathjax-config"}
-      :cdata
-        MathJax.Hub.Config({
-        tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        processEscapes: true
-        }
-        });
-    %script{src: "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML", type: "text/javascript"}
-    %script{type: "text/x-mathjax-config"}
-      :cdata
-        MathJax.Hub.Config({
-        tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        processEscapes: true
-        }
-        });
+      MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+      }
+      });
     %title Double Pendulum
 
   %body
