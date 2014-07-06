@@ -46,7 +46,7 @@
             The Lagrange equations for $\theta_1$ and $\theta_2$ are
             $$ \frac{d}{dt}\left(\frac{\partial L}{\partial\dot{\theta_i}}\right) - \frac{\partial L}{\partial \theta_i} = 0 $$
             Working out the details of the two Lagrange equations, we end up with
-            $$ \ddot{\theta_1} =\frac{g\left(\sin \theta_2 \cos (\theta_1-\theta_2)- \left(1+\frac{m_1}{m_2}\right)\sin \theta_1\right)-\left(l_2\dot{\theta_1}\dot{\theta_2}+l_1\dot{\theta_1}^2\cos (\theta_1-\theta_2)\right)\sin (\theta_1-\theta_2)}{l_1\left(1+\frac{m_1}{m_2}-\cos^2 (\theta_1-\theta_2)\right)}$$
+            $$ \ddot{\theta_1} =\frac{g\left(\sin \theta_2 \cos (\theta_1-\theta_2)- \left(1+\frac{m_1}{m_2}\right)\sin \theta_1\right)-\left(l_2\dot{\theta_2}^2+l_1\dot{\theta_1}^2\cos (\theta_1-\theta_2)\right)\sin (\theta_1-\theta_2)}{l_1\left(1+\frac{m_1}{m_2}-\cos^2 (\theta_1-\theta_2)\right)}$$
             $$ \ddot{\theta_2} = \frac{g\left(1+\frac{m_1}{m_2}\right)(\sin \theta_1\cos (\theta_1 - \theta_2) - \sin \theta_2)+\left(\left(1+\frac{m_1}{m_2}\right)l_1\dot{\theta_1}^2+l_2\dot{\theta_2}^2\cos(\theta_1-\theta_2)\right)\sin(\theta_1-\theta_2)}{l_2\left(1+\frac{m_1}{m_2}-\cos^2 (\theta_1-\theta_2)\right)}$$
             Now, to solve the equations of motion for the angles we can use the Euler method. To do that we just have to define a time interval and iterate over time.
             The angular accelerations, velocities and positions for the instant $t+\Delta t$ are all calculated using the same variables in $t$. Once we calculate the new angles we just need to update the positions of the balls and strings and re-draw the elements.

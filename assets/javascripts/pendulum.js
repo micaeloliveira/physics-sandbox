@@ -71,8 +71,8 @@ var l1     = 150;
 var l2     = 150;
 var X0     = 350;
 var Y0     = 60;
-var g      = 0.02;
-var time   = 4;
+var g      = 9.8;
+var time   = 0.05;
 
 var canvas  = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
@@ -88,6 +88,6 @@ function run(){
   context.clearRect(0, 0, canvas.width, canvas.height);
   init = setInterval(function(){
     animate(myCircle1, myCircle2, myLine1, myLine2, canvas, context);
-  }, 20);
+  }, 10);
 
 }
