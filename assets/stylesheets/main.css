@@ -1,0 +1,34 @@
+/* line 2, ../sass/main.sass */
+.main-title h1 {
+  margin-bottom: 0;
+}
+/* line 4, ../sass/main.sass */
+.main-title h2 {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+/* line 7, ../sass/main.sass */
+.main-title a {
+  text-decoration: none;
+}
+
+/* line 10, ../sass/main.sass */
+.project-card {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+/* line 13, ../sass/main.sass */
+.project-card .card-title {
+  text-decoration: none;
+  color: black;
+}
+/* line 16, ../sass/main.sass */
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+/* line 20, ../sass/main.sass */
+.project-card p {
+  margin-top: 0;
+}

@@ -27,18 +27,24 @@ h2 {
 }
 
 /* line 21, ../sass/base.sass */
+h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+/* line 25, ../sass/base.sass */
 p {
   color: rgba(0, 0, 0, 0.9);
   line-height: 1.5;
   font-size: 1.1em;
 }
 
-/* line 26, ../sass/base.sass */
+/* line 30, ../sass/base.sass */
 a {
   font-weight: 600;
   color: #55acee;
 }
-/* line 29, ../sass/base.sass */
+/* line 33, ../sass/base.sass */
 a:hover, a:visited {
   color: #55acee;
 }
