@@ -42,7 +42,7 @@
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to Physics Sandbox.</h3>
 
 
-<a class="anchor" href="double_pendulum/index.html">Double Pendulum.</a>
+<a class="anchor" href="html/double_pendulum.html">Double Pendulum.</a>
 
 
 <p>
@@ -55,13 +55,13 @@
   $$x_2 = l_1\sin \theta_1 + l_2\sin \theta_2$$
   $$y_2 = -l_1\cos \theta_1 -l_2\cos \theta_2$$
   We will solve the equations of motion in polar coordinates and we are going to use the Lagrangian $L = T- V$ to derive them.
-  The Kinetic energy of the system is 
+  The Kinetic energy of the system is
   $$T = \frac{1}{2}m_1(\dot{x_1}^2+\dot{y_1}^2)+\frac{1}{2}m_2(\dot{x_2}^2+\dot{y_2}^2)$$
   which expressed in polar coordinates is
   $$T = \frac{1}{2}m_1h_1^2\dot{\theta_1}^2+\frac{1}{2}m_2\left(h_1^2\dot{\theta_1}^2+h_2^2\dot{\theta_2}^2+2h_1h_2\dot{\theta_1}\dot{\theta_2}\cos(\theta_1-\theta_2)\right)$$
   The potential energy of the system is
   $$V = m_1gy_1+m_2gy_2 = -(m_1+m_2)gl_1\cos \theta_1 - m_2 g l_2 \cos \theta_2 $$
-  The Lagrange equations for $\theta_1$ and $\theta_2$ are 
+  The Lagrange equations for $\theta_1$ and $\theta_2$ are
   $$ \frac{d}{dt}\left(\frac{\partial L}{\partial\dot{\theta_i}}\right) - \frac{\partial L}{\partial \theta_i} = 0 $$
   Working out the details of the two Lagrange equations, we end up with
   $$ \ddot{\theta_1} =\frac{g\left(\sin \theta_2 \cos (\theta_1-\theta_2)- \left(1+\frac{m_1}{m_2}\right)\sin \theta_1\right)-\left(l_2\dot{\theta_1}\dot{\theta_2}+l_1\dot{\theta_1}^2\cos (\theta_1-\theta_2)\right)\sin (\theta_1-\theta_2)}{l_1\left(1+\frac{m_1}{m_2}-\cos^2 (\theta_1-\theta_2)\right)}$$
