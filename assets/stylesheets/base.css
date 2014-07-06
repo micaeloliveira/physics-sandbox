@@ -32,3 +32,13 @@ p {
   line-height: 1.5;
   font-size: 1.1em;
 }
+
+/* line 26, ../sass/base.sass */
+a {
+  font-weight: 600;
+  color: #55acee;
+}
+/* line 29, ../sass/base.sass */
+a:hover, a:visited {
+  color: #55acee;
+}

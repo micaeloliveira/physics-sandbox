@@ -21,18 +21,11 @@
   %body
     %header
       .inner
-        %h1 Physics-sandbox
-        %h2 This repo contains simple physics simulations
-        %a.button{href: "https://github.com/micaeloliveira/physics-sandbox"}
-          %small> View project on
-          GitHub
+        %h1{style: "margin-bottom: 5px"} Double Pendulum
+        %h2{style: "margin-top: 5px;margin-bottom: 30px"} This repo contains simple physics simulations
     #content-wrapper
       .inner.clearfix
         %section#main-content
-          %h3
-            %a.anchor{href: "#welcome-to-github-pages", name: "welcome-to-github-pages"}>
-              %span.octicon.octicon-link
-            Welcome to Physics Sandbox.
           %a.anchor{href: "../projects/double-pendulum-sim.html"} Double Pendulum.
           %p
             The Double Pendulum is a simple yet rich physical system. The motion of the pendulums is governed by a pair of coupled differential equations, which we will solve using the Euler method.
@@ -72,15 +65,13 @@
                 $ git checkout gh-pages
 
         %aside#sidebar
-          %a.button{href: "https://github.com/micaeloliveira/physics-sandbox/zipball/master"}
-            %small Download
-            \.zip file
-          %a.button{href: "https://github.com/micaeloliveira/physics-sandbox/tarball/master"}
-            %small Download
-            \.tar.gz file
-          %p.repo-owner
-            %a{href: "https://github.com/micaeloliveira/physics-sandbox"}
-            is maintained by
+          %p.repo-owner{style: "margin-top: 50px"}
+            Work by
             = succeed "." do
               %a{href: "https://github.com/micaeloliveira"} micaeloliveira
+              and
               %a{href: "https://github.com/luisbatalha"} luisbatalha
+
+          %a.button{href: "https://github.com/micaeloliveira/physics-sandbox"}
+            %small
+              View project on GitHub
