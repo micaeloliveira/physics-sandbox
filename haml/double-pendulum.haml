@@ -31,7 +31,7 @@
     .content-wrapper
       .inner.clearfix
         %section
-          %a.anchor{href: "../projects/double-pendulum-sim.html"} Double Pendulum Demo!
+          %a{href: "../projects/double-pendulum-sim.html"} Double Pendulum Demo!
           %p
             The Double Pendulum is a simple yet rich physical system. The motion of the pendulums is governed by a pair of coupled differential equations, which we will solve using the Euler method.
             To simulate the system let's first create the methods to draw the balls and the strings that hold them together.
@@ -75,24 +75,24 @@
             %script{src: "http://gist-it.appspot.com/github/micaeloliveira/physics-sandbox/blob/feature/new-styling/assets/javascripts/pendulum.js?slice=46:58;footer=minimal"}
           %p
             And there you have it, a simulation of the double pendulum written in less than 100 lines of javscript! Go ahead and play with the
-            %a.anchor{href: "../projects/double-pendulum-sim.html"} demo!
-            %a.anchor{href: "http://github.com/micaeloliveira/physics-sandbox/blob/master/double_pendulum/pendulum.js"} [Source]
+            %a{href: "../projects/double-pendulum-sim.html"} demo!
+            %a{href: "http://github.com/micaeloliveira/physics-sandbox/blob/master/double_pendulum/pendulum.js"} [Source]
 
             Learn more about the double pendulum on
             = succeed "." do
-              %a.anchor{href: "http://en.wikipedia.org/wiki/Double_pendulum"} wikipedia
+              %a{href: "http://en.wikipedia.org/wiki/Double_pendulum"} wikipedia
 
 
 
 
         %aside#sidebar
-          %p.repo-owner{style: "margin-top: 50px"}
+          %p{style: "margin-top: 50px"}
             Work by
             = succeed "." do
               %a{href: "https://github.com/micaeloliveira"} micaeloliveira
               and
               %a{href: "https://github.com/luisbatalha"} luisbatalha
 
-          %a.button{href: "https://github.com/micaeloliveira/physics-sandbox"}
+          %a{href: "https://github.com/micaeloliveira/physics-sandbox"}
             %small
               View project on GitHub
