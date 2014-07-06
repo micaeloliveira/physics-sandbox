@@ -1,0 +1,33 @@
+/* line 1, ../sass/double_pendulum.sass */
+.sidebar {
+  background: #fafafa;
+  float: left;
+  font-family: Helvetica, Arial, sans-serif;
+  min-width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 10px 5px;
+}
+/* line 9, ../sass/double_pendulum.sass */
+.sidebar label {
+  margin: 10px 0 5px 10px;
+  display: block;
+}
+/* line 12, ../sass/double_pendulum.sass */
+.sidebar input {
+  margin: 10px 0 5px 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 17, ../sass/double_pendulum.sass */
+.phys-canvas {
+  float: left;
+}
+
+/* line 20, ../sass/double_pendulum.sass */
+.submit-btn {
+  width: 80%;
+  padding: 5px;
+  text-align: center;
+}

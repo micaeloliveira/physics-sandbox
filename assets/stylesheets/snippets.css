@@ -1,0 +1,11 @@
+/* line 1, ../sass/snippets.sass */
+.code-snippet {
+  display: block;
+  margin: 30px auto;
+}
+
+/* line 5, ../sass/snippets.sass */
+.formula-snippet {
+  display: block;
+  overflow: auto;
+}
