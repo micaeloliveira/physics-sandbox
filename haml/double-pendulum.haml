@@ -57,13 +57,72 @@
             Learn more about the double pendulum on
             = succeed "." do
               %a.anchor{href: "http://en.wikipedia.org/wiki/Double_pendulum"} wikipedia
+
           %pre
             %code.code
               :preserve
-                $ cd your_repo_root/repo_name
-                $ git fetch origin
-                $ git checkout gh-pages
+                function drawLine(myLine, context) {
+                  context.beginPath();
+                  context.moveTo(myLine.x0, myLine.y0);
+                  context.lineTo(myLine.x, myLine.y);
+                  context.strokeStyle = 'red';
+                  context.stroke();
+                }
+          %pre
+            %code.code
+              :preserve
+                function drawCircle(myCircle, context) {
+                  context.beginPath();
+                  context.arc(myCircle.x, myCircle.y, myCircle.mass, 0, 2 * Math.PI, false);
+                  context.fillStyle = '#000';
+                  context.fill();
+                  context.lineWidth = 5;
+                  context.strokeStyle = 'black';
+                  context.stroke();
+                }
+          %pre
+            %code.code
+              :preserve
+                function animate(myCircle1, myCircle2, myLine1, myLine2, canvas, context) {
+                /**/
+                  myCircle1.x = X0+l1*Math.sin(Phi1);
+                  myCircle1.y = Y0+l1*Math.cos(Phi1);
+                  myCircle2.x = X0+l1*Math.sin(Phi1)+l2*Math.sin(Phi2);
+                  myCircle2.y = Y0+l1*Math.cos(Phi1)+l2*Math.cos(Phi2);
 
+                  myLine1.x  = myCircle1.x;
+                  myLine1.y  = myCircle1.y;
+                  myLine2.x0 = myCircle1.x;
+                  myLine2.y0 = myCircle1.y;
+                  myLine2.x  = myCircle2.x;
+                  myLine2.y  = myCircle2.y;
+
+                  context.clearRect(0, 0, canvas.width, canvas.height);
+
+                  drawLine(myLine1, context);
+                  drawLine(myLine2, context);
+                  drawCircle(myCircle1, context);
+                  drawCircle(myCircle2, context);
+                }
+
+
+          %pre
+            %code.code
+              :preserve
+                function run(){
+                  var myLine1 = {x0: X0, y0: Y0, x: 0, y: 0};
+                  var myLine2 = {x0: 0, y0: 0, x: 0, y: 0};
+                  var myCircle1 = {x: X0+l1*Math.sin(Phi1),
+                                   y: Y0+l1*Math.cos(Phi1), mass: m1};
+                  var myCircle2 = {x: X0+l1*Math.sin(Phi1)+l2*Math.sin(Phi2),
+                                   y: Y0+l1*Math.cos(Phi1)+l2*Math.cos(Phi2), mass: m2};
+
+                  clearInterval(init);
+                  context.clearRect(0, 0, canvas.width, canvas.height);
+                  init = setInterval(function(){
+                    animate(myCircle1, myCircle2, myLine1, myLine2, canvas, context);
+                  }, 20);
+                }
         %aside#sidebar
           %p.repo-owner{style: "margin-top: 50px"}
             Work by
