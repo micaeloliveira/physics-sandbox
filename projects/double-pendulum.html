@@ -7,7 +7,8 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic,400,700italic,700|Arbutus+Slab:400' rel='stylesheet' type='text/css'>
     <link href='../assets/stylesheets/fonts.css' rel='stylesheet' type='text/css'>
     <link href='../assets/stylesheets/base.css' media='screen' rel='stylesheet' type='text/css'>
-    <link href='../assets/stylesheets/code_snippet.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='../assets/stylesheets/main.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='../assets/stylesheets/snippets.css' media='screen' rel='stylesheet' type='text/css'>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script>
     <script type='text/x-mathjax-config'>
@@ -21,63 +22,78 @@
     <title>Double Pendulum</title>
   </head>
   <body>
-    <header>
-      <h1 style='margin-bottom: 5px'>Double Pendulum</h1>
-      <h2 style='margin-top: 5px;margin-bottom: 30px'>Simulation of the Double Pendulum in 100 lines of JavaScript</h2>
+    <header class='main-title'>
+      <h1>Double Pendulum</h1>
+      <h2>Double Pendulum in less than 100 lines of JavaScript</h2>
+      <a class='anchor-nav' href='../index.html'>< Back to Projects</a>
     </header>
-    <div id='content-wrapper'>
+    <div class='content-wrapper'>
       <div class='inner clearfix'>
         <section>
-          <a class='anchor' href='../projects/double-pendulum-sim.html'>Double Pendulum.</a>
+          <a href='../projects/double-pendulum-sim.html'>Double Pendulum Demo!</a>
           <p>
             The Double Pendulum is a simple yet rich physical system. The motion of the pendulums is governed by a pair of coupled differential equations, which we will solve using the Euler method.
             To simulate the system let's first create the methods to draw the balls and the strings that hold them together.
           </p>
-          <script src='http://gist-it.appspot.com/github/micaeloliveira/physics-sandbox/blob/feature/new-styling/assets/javascripts/pendulum.js?slice=14:31;footer=minimal'></script>
+          <code class='code-snippet'><script src='http://gist-it.appspot.com/github/micaeloliveira/physics-sandbox/blob/feature/new-styling/assets/javascripts/pendulum.js?slice=14:31;footer=minimal'></script></code>
           <p>
             Now, we have to figure out the way the strings and the balls are going to move, i.e., we need to solve the equations of motion for the system.
             Let's start by expressing the cartesian coordinates of the two pendulums
-            $$x_1 = l_1\sin \theta_1$$
-            $$y_1 = -l_1\cos \theta_1$$
-            $$x_2 = l_1\sin \theta_1 + l_2\sin \theta_2$$
-            $$y_2 = -l_1\cos \theta_1 -l_2\cos \theta_2$$
+            <span class='formula-snippet'>
+              $$x_1 = l_1\sin \theta_1$$
+              $$y_1 = -l_1\cos \theta_1$$
+              $$x_2 = l_1\sin \theta_1 + l_2\sin \theta_2$$
+              $$y_2 = -l_1\cos \theta_1 -l_2\cos \theta_2$$
+            </span>
             We will solve the equations of motion in polar coordinates and we are going to use the Lagrangian $L = T- V$ to derive them.
             The Kinetic energy of the system is
-            $$T = \frac{1}{2}m_1(\dot{x_1}^2+\dot{y_1}^2)+\frac{1}{2}m_2(\dot{x_2}^2+\dot{y_2}^2)$$
+            <span class='formula-snippet'>
+              $$T = \frac{1}{2}m_1(\dot{x_1}^2+\dot{y_1}^2)+\frac{1}{2}m_2(\dot{x_2}^2+\dot{y_2}^2)$$
+            </span>
             which expressed in polar coordinates is
-            $$T = \frac{1}{2}m_1h_1^2\dot{\theta_1}^2+\frac{1}{2}m_2\left(h_1^2\dot{\theta_1}^2+h_2^2\dot{\theta_2}^2+2h_1h_2\dot{\theta_1}\dot{\theta_2}\cos(\theta_1-\theta_2)\right)$$
+            <span class='formula-snippet'>
+              $$T = \frac{1}{2}m_1h_1^2\dot{\theta_1}^2+\frac{1}{2}m_2\left(h_1^2\dot{\theta_1}^2+h_2^2\dot{\theta_2}^2+2h_1h_2\dot{\theta_1}\dot{\theta_2}\cos(\theta_1-\theta_2)\right)$$
+            </span>
             The potential energy of the system is
-            $$V = m_1gy_1+m_2gy_2 = -(m_1+m_2)gl_1\cos \theta_1 - m_2 g l_2 \cos \theta_2 $$
+            <span class='formula-snippet'>
+              $$V = m_1gy_1+m_2gy_2 = -(m_1+m_2)gl_1\cos \theta_1 - m_2 g l_2 \cos \theta_2 $$
+            </span>
             The Lagrange equations for $\theta_1$ and $\theta_2$ are
-            $$ \frac{d}{dt}\left(\frac{\partial L}{\partial\dot{\theta_i}}\right) - \frac{\partial L}{\partial \theta_i} = 0 $$
+            <span class='formula-snippet'>
+              $$ \frac{d}{dt}\left(\frac{\partial L}{\partial\dot{\theta_i}}\right) - \frac{\partial L}{\partial \theta_i} = 0 $$
+            </span>
             Working out the details of the two Lagrange equations, we end up with
-            $$ \ddot{\theta_1} =\frac{g\left(\sin \theta_2 \cos (\theta_1-\theta_2)- \mu\sin \theta_1\right)-\left(l_2\dot{\theta_2}^2+l_1\dot{\theta_1}^2\cos (\theta_1-\theta_2)\right)\sin (\theta_1-\theta_2)}{l_1\left(\mu-\cos^2 (\theta_1-\theta_2)\right)}$$
-            $$ \ddot{\theta_2} = \frac{g\mu(\sin \theta_1\cos (\theta_1 - \theta_2) - \sin \theta_2)+\left(\mu l_1\dot{\theta_1}^2+l_2\dot{\theta_2}^2\cos(\theta_1-\theta_2)\right)\sin(\theta_1-\theta_2)}{l_2\left(\mu-\cos^2 (\theta_1-\theta_2)\right)}$$
+            <span class='formula-snippet'>
+              $$ \ddot{\theta_1} =\frac{g\left(\sin \theta_2 \cos (\theta_1-\theta_2)- \mu\sin \theta_1\right)-\left(l_2\dot{\theta_2}^2+l_1\dot{\theta_1}^2\cos (\theta_1-\theta_2)\right)\sin (\theta_1-\theta_2)}{l_1\left(\mu-\cos^2 (\theta_1-\theta_2)\right)}$$
+            </span>
+            <span class='formula-snippet'>
+              $$ \ddot{\theta_2} = \frac{g\mu(\sin \theta_1\cos (\theta_1 - \theta_2) - \sin \theta_2)+\left(\mu l_1\dot{\theta_1}^2+l_2\dot{\theta_2}^2\cos(\theta_1-\theta_2)\right)\sin(\theta_1-\theta_2)}{l_2\left(\mu-\cos^2 (\theta_1-\theta_2)\right)}$$
+            </span>
             where $ \mu = 1 + \frac{m_1}{m_2}$.
             <br>
             Now, to solve the equations of motion for the angles we can use the Euler method. To do that we just have to define a time interval and iterate over time.
           </p>
-          <script src='http://gist-it.appspot.com/github/micaeloliveira/physics-sandbox/blob/feature/new-styling/assets/javascripts/pendulum.js?slice=32:40;footer=minimal'></script>
+          <code class='code-snippet'><script src='http://gist-it.appspot.com/github/micaeloliveira/physics-sandbox/blob/feature/new-styling/assets/javascripts/pendulum.js?slice=32:40;footer=minimal'></script></code>
           <p>
             The angular accelerations, velocities and positions for the instant $t+\Delta t$ are all calculated using the same variables in $t$. Once we calculate the new angles we just need to update the positions of the balls and strings and re-draw the elements.
           </p>
-          <script src='http://gist-it.appspot.com/github/micaeloliveira/physics-sandbox/blob/feature/new-styling/assets/javascripts/pendulum.js?slice=46:58;footer=minimal'></script>
+          <code class='code-snippet'><script src='http://gist-it.appspot.com/github/micaeloliveira/physics-sandbox/blob/feature/new-styling/assets/javascripts/pendulum.js?slice=46:58;footer=minimal'></script></code>
           <p>
             And there you have it, a simulation of the double pendulum written in less than 100 lines of javscript! Go ahead and play with the
-            <a class='anchor' href='../projects/double-pendulum-sim.html'>demo!</a>
-            <a class='anchor' href='http://github.com/micaeloliveira/physics-sandbox/blob/master/double_pendulum/pendulum.js'>[Source]</a>
+            <a href='../projects/double-pendulum-sim.html'>demo!</a>
+            <a href='http://github.com/micaeloliveira/physics-sandbox/blob/master/double_pendulum/pendulum.js'>[Source]</a>
             Learn more about the double pendulum on
-            <a class='anchor' href='http://en.wikipedia.org/wiki/Double_pendulum'>wikipedia</a>.
+            <a href='http://en.wikipedia.org/wiki/Double_pendulum'>wikipedia</a>.
           </p>
         </section>
         <aside id='sidebar'>
-          <p class='repo-owner' style='margin-top: 50px'>
+          <p style='margin-top: 50px'>
             Work by
             <a href='https://github.com/micaeloliveira'>micaeloliveira</a>
             and
             <a href='https://github.com/luisbatalha'>luisbatalha</a>.
           </p>
-          <a class='button' href='https://github.com/micaeloliveira/physics-sandbox'>
+          <a href='https://github.com/micaeloliveira/physics-sandbox'>
             <small>
               View project on GitHub
             </small>
