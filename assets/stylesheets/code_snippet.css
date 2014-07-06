@@ -1,0 +1,8 @@
+/* line 1, ../sass/code_snippet.sass */
+.code {
+  display: block;
+  background: #eeeeee;
+  padding: 5px;
+  margin: 5px auto;
+  width: 90%;
+}
