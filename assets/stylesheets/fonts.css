@@ -29,3 +29,93 @@
   font-weight: bold;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "fontawesome";
+  src: url("../fonts/fontello/fontawesome.eot");
+  src: url("../fonts/fontello/fontawesome.eot#iefix") format("embedded-opentype"), url("../fonts/fontello/fontawesome.woff") format("woff"), url("../fonts/fontello/fontawesome.ttf") format("truetype"), url("../fonts/fontello/fontawesome.svg#fontawesome") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 43, ../sass/fonts.sass */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontawesome";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+}
+
+/* line 58, ../sass/fonts.sass */
+.icon-emo-tongue:before {
+  content: "\e800";
+}
+
+/* line 61, ../sass/fonts.sass */
+.icon-emo-coffee:before {
+  content: "\e801";
+}
+
+/* line 64, ../sass/fonts.sass */
+.icon-emo-devil:before {
+  content: "\e802";
+}
+
+/* line 67, ../sass/fonts.sass */
+.icon-emo-beer:before {
+  content: "\e803";
+}
+
+/* line 70, ../sass/fonts.sass */
+.icon-emo-thumbsup:before {
+  content: "\e804";
+}
+
+/* line 73, ../sass/fonts.sass */
+.icon-emo-happy:before {
+  content: "\e805";
+}
+
+/* line 76, ../sass/fonts.sass */
+.icon-emo-wink:before {
+  content: "\e806";
+}
+
+/* line 79, ../sass/fonts.sass */
+.icon-heart:before {
+  content: "\e807";
+}
+
+/* line 82, ../sass/fonts.sass */
+.icon-heart-empty:before {
+  content: "\e808";
+}
+
+/* line 85, ../sass/fonts.sass */
+.icon-rocket:before {
+  content: "\e809";
+}
+
+/* line 88, ../sass/fonts.sass */
+.icon-fork:before {
+  content: "\e80a";
+}
+
+/* line 91, ../sass/fonts.sass */
+.icon-asterisk:before {
+  content: "\e80b";
+}
+
+/* line 94, ../sass/fonts.sass */
+.icon-graduation-cap:before {
+  content: "\e80c";
+}
