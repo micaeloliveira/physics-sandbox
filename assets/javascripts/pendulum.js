@@ -15,11 +15,8 @@ $('#set_variables_form').submit(function (e) {
 function drawCircle(myCircle, context) {
   context.beginPath();
   context.arc(myCircle.x, myCircle.y, myCircle.mass, 0, 2 * Math.PI, false);
-  context.fillStyle = '#000';
+  context.fillStyle = 'rgba(0,0,0,1)';
   context.fill();
-  context.lineWidth = 5;
-  context.strokeStyle = 'black';
-  context.stroke();
 }
 
 function drawLine(myLine, context) {
@@ -27,6 +24,7 @@ function drawLine(myLine, context) {
   context.moveTo(myLine.x0, myLine.y0);
   context.lineTo(myLine.x, myLine.y);
   context.strokeStyle = 'red';
+  context.lineWidth = 5;
   context.stroke();
 }
 
@@ -88,6 +86,6 @@ function run(){
   context.clearRect(0, 0, canvas.width, canvas.height);
   init = setInterval(function(){
     animate(myCircle1, myCircle2, myLine1, myLine2, canvas, context);
-  }, 10);
+  }, 5);
 
 }
