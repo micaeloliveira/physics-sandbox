@@ -62,3 +62,9 @@
   margin-right: 8px;
   padding: 5px;
 }
+
+/* line 42, ../sass/main.sass */
+#pendulum {
+  display: block;
+  margin: 10px auto;
+}
