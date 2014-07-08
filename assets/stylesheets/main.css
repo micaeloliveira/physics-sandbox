@@ -53,3 +53,12 @@
 .content-wrapper {
   margin-top: 40px;
 }
+
+/* line 35, ../sass/main.sass */
+#devil-button {
+  background-color: #bb0707;
+  color: white;
+  border-radius: 17px;
+  margin-right: 8px;
+  padding: 5px 10px;
+}
