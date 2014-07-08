@@ -30,7 +30,7 @@
     .content-wrapper
       .inner.clearfix
         %section
-          %a{href: "../projects/double-pendulum-sim.html"} Double Pendulum Demo!
+          %a{href: "../projects/double-pendulum-sim.html" target:"_blank"} Double Pendulum Demo!
           %p
             The Double Pendulum is a simple yet rich physical system. The motion of the pendulums is governed by a pair of coupled differential equations, which we will solve using the Euler method.
             To simulate the system let's first create the methods to draw the balls and the strings that hold them together.
@@ -81,23 +81,18 @@
             Learn more about the double pendulum on
             = succeed "." do
               %a{href: "http://en.wikipedia.org/wiki/Double_pendulum"} wikipedia
-          %br
+
           %p
-            %a#devil-button{href: "mailto:luisbatalha10@gmail.com"}
+            %a#devil-button{href: "mailto:physicsandbox@gmail.com?subject=This is my solution"}
               %i.icon-emo-devil
               Click here
-            if you think you can make it more interesting 
+            if you think you can make it more interesting
 
+        %script{src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53bc43800229b6a1", type: "text/javascript"}
+        .addthis_sharing_toolbox
 
-
-        %aside#sidebar
-          %p{style: "margin-top: 50px"}
-            Work by
-            = succeed "." do
-              %a{href: "https://github.com/micaeloliveira"} micaeloliveira
-              and
-              %a{href: "https://github.com/luisbatalha"} luisbatalha
-
+        %footer
           %a{href: "https://github.com/micaeloliveira/physics-sandbox"}
             %small
               View project on GitHub
+

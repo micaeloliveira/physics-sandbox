@@ -49,3 +49,8 @@ a {
 a:hover, a:visited {
   color: #55acee;
 }
+
+/* line 37, ../sass/base.sass */
+footer {
+  margin-top: 50px;
+}
