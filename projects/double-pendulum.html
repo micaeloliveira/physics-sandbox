@@ -10,6 +10,7 @@
     <link href='../assets/stylesheets/main.css' media='screen' rel='stylesheet' type='text/css'>
     <link href='../assets/stylesheets/snippets.css' media='screen' rel='stylesheet' type='text/css'>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53bc43800229b6a1' type='text/javascript'></script>
     <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script>
     <script type='text/x-mathjax-config'>
       MathJax.Hub.Config({
@@ -30,7 +31,7 @@
     <div class='content-wrapper'>
       <div class='inner clearfix'>
         <section>
-          <a href='../projects/double-pendulum-sim.html'>Double Pendulum Demo!</a>
+          <a href='../projects/double-pendulum-sim.html' target='_blank'>Double Pendulum Demo!</a>
           <p>
             The Double Pendulum is a simple yet rich physical system. The motion of the pendulums is governed by a pair of coupled differential equations, which we will solve using the Euler method.
             To simulate the system let's first create the methods to draw the balls and the strings that hold them together.
@@ -40,7 +41,7 @@
             Now, we have to figure out the way the strings and the balls are going to move, i.e., we need to solve the equations of motion for the system.
             Let's start by expressing the cartesian coordinates of the two pendulums
           </p>
-          <img id='pendulum' src='../assets/images/pendulum.jpg'>
+          <img alt='pendulum' id='pendulum' src='../assets/images/pendulum.jpg'>
           <p>
             <span class='formula-snippet'>
               $$x_1 = l_1\sin \theta_1$$
@@ -89,15 +90,17 @@
             <a href='http://en.wikipedia.org/wiki/Double_pendulum'>wikipedia</a>.
           </p>
           <p>
-            <a href='mailto:physicsandbox@gmail.com?subject=This is my solution' id='devil-button'>
+            <a href='mailto:physicsandbox@gmail.com?subject=Found a better solution!' id='devil-button'>
               <i class='icon-emo-devil'></i>
               Click here
             </a>
             if you think you can make it more interesting
           </p>
         </section>
-        <script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53bc43800229b6a1' type='text/javascript'></script>
-        <div class='addthis_sharing_toolbox'></div>
+        <footer style='margin-top:40px'>
+          Share this
+          <div class='addthis_sharing_toolbox' style='display: inline'></div>
+        </footer>
         <footer>
           <a href='https://github.com/micaeloliveira/physics-sandbox'>
             <small>
